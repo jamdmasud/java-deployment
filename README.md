@@ -1,1 +1,1 @@
-# AWSCodeDeploySampleTomcat
+# Java code deploy to tomcat through AWS code pipeline
