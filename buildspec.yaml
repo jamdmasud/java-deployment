@@ -11,6 +11,6 @@ phases:
 
 artifacts:
   files:
-    - 'target/LoginWebApp-1.war'
+    - '**/spring-boot-profile-1.0.jar'
     - 'appspec.yaml'
   discard-paths: yes
