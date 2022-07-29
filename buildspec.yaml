@@ -11,6 +11,6 @@ phases:
 
 artifacts:
   files:
-    - '**/spring-boot-profile-1.0.jar'
+    - '**/hello-world-0.0.1-SNAPSHOT.war'
     - 'appspec.yaml'
   discard-paths: yes
