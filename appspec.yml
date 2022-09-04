@@ -1,5 +1,9 @@
 version: 0.0
 os: linux
+files:
+  - source: /tmp
+    destination: /home/ubuntu/HelloWorld
+    overwrite: true
 hooks:
   BeforeInstall:
     - location: install.sh
