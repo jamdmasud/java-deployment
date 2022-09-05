@@ -12,5 +12,5 @@ phases:
 artifacts:
   files:
     - '**/hello-world-0.0.1-SNAPSHOT.war'
-    - '**/appspec.yaml'
+    - 'appspec.yaml'
   discard-paths: yes
