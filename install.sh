@@ -1,4 +1,4 @@
 sudo service tomcat stop
-aws s3 cp s3://citylivedeployment/target/LoginWebApp-1.war /tmp
-sudo mv /tmp/LoginWebApp-1.war /usr/share/tomcat/webapps/LoginWebApp-1.war
+aws s3 cp s3://citylivedeployment/target/hello-world-0.0.1-SNAPSHOT.war /tmp
+sudo mv /tmp/hello-world-0.0.1-SNAPSHOT.war /usr/share/tomcat/webapps/hello-world-0.0.1-SNAPSHOT.war
 sudo service tomcat start

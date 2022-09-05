@@ -1,7 +1,15 @@
 version: 0.0
 os: linux
+files:
+  - source: /
+    destination: /usr/local/tomcat10/webapps
+    overwrite: true
 hooks:
-  BeforeInstall:
-    - location: install.sh
+  ApplicationStop:
+    - location: scripts/application_stop.sh
       timeout: 300
-      runas: root
+      runas: ec2-user
+  ApplicationStart:
+    - location: scripts/application_start.sh
+      timeout: 300
+      runas: ec2-user
