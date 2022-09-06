@@ -1,15 +1,15 @@
 version: 0.0
 os: linux
 files:
-  - source: /
+  - source: /hello-world-0.0.1-SNAPSHOT.war
     destination: /home/ec2-user
     overwrite: true
 hooks:
   ApplicationStop:
     - location: scripts/application_stop.sh
       timeout: 300
-      runas: ec2-user
+      runas: root
   ApplicationStart:
     - location: scripts/application_start.sh
       timeout: 300
-      runas: ec2-user
+      runas: root
