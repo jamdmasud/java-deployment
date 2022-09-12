@@ -1,0 +1,19 @@
+version: 0.0
+os: linux
+files:
+  - source: /hello-world-0.0.1-SNAPSHOT.war
+    destination: /opt/tomcat/webapps
+    overwrite: true
+hooks:
+  ApplicationStop:
+    - location: scripts/application_stop
+      timeout: 300
+      runas: root
+  BeforeInstall:
+    - location: scripts/install_dependencies
+      timeout: 300
+      runas: root
+  ApplicationStart:
+    - location: scripts/application_start
+      timeout: 300
+      runas: root
