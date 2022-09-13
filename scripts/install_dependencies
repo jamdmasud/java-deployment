@@ -1,5 +1,5 @@
 #!/bin/bash
-file="/usr/local/tomcat10/webapps/hello-world-0.0.1-SNAPSHOT.war"
+file="/opt/tomcat/webapps/hello-world-0.0.1-SNAPSHOT.war"
 if [ -f "$file" ] ; then
     rm "$file"
 fi
