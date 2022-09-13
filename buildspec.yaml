@@ -10,7 +10,10 @@ phases:
       - mvn clean install
 
 artifacts:
-  files:
+  files:    
     - '**/hello-world-0.0.1-SNAPSHOT.war'
-    - 'appspec.yaml'
+    - 'appspec.yml'
+    - 'scripts/application_start'
+    - 'scripts/application_stop'
+    - 'scripts/install_dependencies'
   discard-paths: yes
