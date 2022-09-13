@@ -6,14 +6,14 @@ files:
     overwrite: true
 hooks:
   ApplicationStop:
-    - location: scripts/application_stop
+    - location: application_stop
       timeout: 300
       runas: root
   BeforeInstall:
-    - location: scripts/install_dependencies
+    - location: install_dependencies
       timeout: 300
       runas: root
   ApplicationStart:
-    - location: scripts/application_start
+    - location: application_start
       timeout: 300
       runas: root
